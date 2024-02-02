@@ -137,8 +137,8 @@ importers:
       '@prisma/get-platform': workspace:*
       '@prisma/internals': workspace:*
       '@prisma/migrate': workspace:*
-      '@prisma/studio': 0.481.0
-      '@prisma/studio-server': 0.481.0
+      '@prisma/studio': 0.497.0
+      '@prisma/studio-server': 0.497.0
       '@swc/core': 1.3.32
       '@swc/jest': 0.2.24
       '@types/debug': 4.1.7
@@ -180,8 +180,8 @@ importers:
       '@prisma/get-platform': link:../get-platform
       '@prisma/internals': link:../internals
       '@prisma/migrate': link:../migrate
-      '@prisma/studio': 0.481.0
-      '@prisma/studio-server': 0.481.0_af2arurw4njyhq5wa6w6rrkc54
+      '@prisma/studio': 0.497.0
+      '@prisma/studio-server': 0.497.0_af2arurw4njyhq5wa6w6rrkc54
       '@swc/core': 1.3.32
       '@swc/jest': 0.2.24_@swc+core@1.3.32
       '@types/debug': 4.1.7
@@ -3307,16 +3307,16 @@ packages:
     resolution: {integrity: sha512-irpfcVgHRfZQFTICA8+P6CNJicC+/Xq8gXWe7uVjltWgbBb2IBSNPZR3zpONw2LhkYewqg0CKJxGqtAjnKiiuA==}
     dev: false
 
-  /@prisma/studio-common/0.481.0:
-    resolution: {integrity: sha512-gG/oyllZztkdZ4gBT3RYbtgeaY81BCrC+1eM7kZY8x+RAfirBP8+7781rIDCnrN+a8D6RT5vkiLdEWDcorX/ag==}
-    engines: {node: '>= 12'}
+  /@prisma/studio-common/0.497.0:
+    resolution: {integrity: sha512-rm7oyoX0HGgH8FM2UK35/IT6697YwhDesUgBuBcfSbxqTW5EcRxS9YoCyUzsfQ+mZFJVQFFpMad4my/SejCBYA==}
+    engines: {node: '>= 16.13'}
     dependencies:
       buffer: 6.0.3
     dev: true
 
-  /@prisma/studio-pcw/0.481.0_af2arurw4njyhq5wa6w6rrkc54:
-    resolution: {integrity: sha512-oAWIBPVWYC9bkWczX3u+p7YO8j7S/h/V6ew54C80OjL9zOEB/5Ie6zFdaeTf9qdy86lES0VTuPKT4rzclJPCSw==}
-    engines: {node: '>= 12'}
+  /@prisma/studio-pcw/0.497.0_af2arurw4njyhq5wa6w6rrkc54:
+    resolution: {integrity: sha512-OS8F7PU3rcS7bVhwWMt85j+0zVuCylF4loU0bIQePrSJnackHIN3qWQ60ORoYVqAZwh9g2PGxigPqt7xcITWhg==}
+    engines: {node: '>= 16.13'}
     peerDependencies:
       '@prisma/client': '*'
       '@prisma/internals': '*'
@@ -3329,28 +3329,29 @@ packages:
       - supports-color
     dev: true
 
-  /@prisma/studio-server/0.481.0_af2arurw4njyhq5wa6w6rrkc54:
-    resolution: {integrity: sha512-hIHWeZMk5MX8SxAILLvqkMjVAOE8cGRqHB+GmPjWEwELc5SfTEYWILP3F2F9kjCtUxmriwOl8Dd+Vt5W1egniA==}
-    engines: {node: '>= 12'}
+  /@prisma/studio-server/0.497.0_af2arurw4njyhq5wa6w6rrkc54:
+    resolution: {integrity: sha512-pzfK59NiEy/hLB6FnjTwENaNZoEb9hFijxTZaFHPmirb4s3G24K/wOcRGCAM5djgi4S9URlwhZjrxZuCVUBhMw==}
+    engines: {node: '>= 16.13'}
     peerDependencies:
       '@prisma/internals': '*'
     dependencies:
       '@prisma/internals': link:packages/internals
-      '@prisma/studio': 0.481.0
-      '@prisma/studio-common': 0.481.0
-      '@prisma/studio-pcw': 0.481.0_af2arurw4njyhq5wa6w6rrkc54
-      checkpoint-client: 1.1.20
+      '@prisma/studio': 0.497.0
+      '@prisma/studio-common': 0.497.0
+      '@prisma/studio-pcw': 0.497.0_af2arurw4njyhq5wa6w6rrkc54
+      checkpoint-client: 1.1.33
       cors: 2.8.5
       debug: 4.3.3
       express: 4.17.2
       untildify: 4.0.0
     transitivePeerDependencies:
       - '@prisma/client'
+      - encoding
       - supports-color
     dev: true
 
-  /@prisma/studio/0.481.0:
-    resolution: {integrity: sha512-uGe9d78Xjoj+Aw4lXEq2LmwbtwIlLZBvSfUcN1QYXTto3xH91pyajG+tDs/7G5zBJQghXgqCC5S/+sfpY0PBRQ==}
+  /@prisma/studio/0.497.0:
+    resolution: {integrity: sha512-ASPVUAsc8R0S5tHq4oHmjEl4MQKXXHVYZNqG5o0oq659FJ+rEuzm22HNHXf5yOVDDKJJX/JU0LNkGHHleqGx1g==}
     dev: true
 
   /@rushstack/node-core-library/3.55.0_@types+node@14.18.36:
@@ -5111,18 +5112,6 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /checkpoint-client/1.1.20:
-    resolution: {integrity: sha512-AHDELBFMXBV9Rzp4JaN0JR03YQomZpaaVFDjgH7Ue4CcPuzNV2dZ94ZORJ9OoQsASYca/uR7UNGXmeNuWHc+IQ==}
-    dependencies:
-      ci-info: 3.1.1
-      env-paths: 2.2.1
-      fast-write-atomic: 0.2.1
-      make-dir: 3.1.0
-      ms: 2.1.3
-      node-fetch: 2.6.1
-      uuid: 8.3.2
-    dev: true
-
   /checkpoint-client/1.1.23:
     resolution: {integrity: sha512-NrGvMiH1fUcZwrYc0Z+YTn7q9ysV0kPgVyDKZ5jrfIerFJuSllvyGsY7bHeQSEiljaIaUP1Q/xutZ8q1s7PGzg==}
     dependencies:
@@ -5135,6 +5124,19 @@ packages:
       uuid: 8.3.2
     transitivePeerDependencies:
       - encoding
+
+  /checkpoint-client/1.1.33:
+    resolution: {integrity: sha512-kiG9G/2K2lDkwd5q7TrzxN4IVqBSdwItLWXw6H+7+2N5jopjHRjD434OWvg/anuRvAnRlr5tflOuwbetsHQoZQ==}
+    dependencies:
+      ci-info: 4.0.0
+      env-paths: 2.2.1
+      make-dir: 4.0.0
+      ms: 2.1.3
+      node-fetch: 2.7.0
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - encoding
+    dev: true
 
   /chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
@@ -5160,15 +5162,16 @@ packages:
     resolution: {integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==}
     dev: true
 
-  /ci-info/3.1.1:
-    resolution: {integrity: sha512-kdRWLBIJwdsYJWYJFtAFFYxybguqeF91qpZaggjG5Nf8QKdizFG2hjqvaTXbxFIcYbSaD74KpAXv6BSm17DHEQ==}
-    dev: true
-
   /ci-info/3.3.0:
     resolution: {integrity: sha512-riT/3vI5YpVH6/qomlDnJow6TBee2PBKSEpx3O32EGPYbWGIRsIlGRms3Sm74wYE1JMo8RnO04Hb12+v1J5ICw==}
 
   /ci-info/3.7.1:
     resolution: {integrity: sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==}
+    engines: {node: '>=8'}
+    dev: true
+
+  /ci-info/4.0.0:
+    resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
     engines: {node: '>=8'}
     dev: true
 
@@ -9452,6 +9455,13 @@ packages:
     dependencies:
       semver: 6.3.0
 
+  /make-dir/4.0.0:
+    resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
+    engines: {node: '>=10'}
+    dependencies:
+      semver: 7.5.4
+    dev: true
+
   /make-error/1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
@@ -10016,11 +10026,6 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: true
 
-  /node-fetch/2.6.1:
-    resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
-    engines: {node: 4.x || >=6.0.0}
-    dev: true
-
   /node-fetch/2.6.7_3wcp6bao3dfksocwsfev5pt7km:
     resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
     engines: {node: 4.x || >=6.0.0}
@@ -10043,6 +10048,18 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
+
+  /node-fetch/2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: true
 
   /node-fetch/3.2.10:
     resolution: {integrity: sha512-MhuzNwdURnZ1Cp4XTazr69K0BTizsBroX7Zx3UgDSVcZYKF/6p0CBe4EUb/hLqmzVhl0UpYfgRljQ4yxE+iCxA==}
@@ -11514,6 +11531,14 @@ packages:
     dependencies:
       lru-cache: 6.0.0
 
+  /semver/7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+
   /send/0.17.2:
     resolution: {integrity: sha512-UJYB6wFSJE3G00nEivR5rgWp8c2xXvJ3OPWPhmuteU0IKj8nKbG3DrjiOmLwpnHGYWAVwA69zmTm++YG0Hmwww==}
     engines: {node: '>= 0.8.0'}
@@ -12789,6 +12814,11 @@ packages:
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+
+  /uuid/9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: true
 
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
